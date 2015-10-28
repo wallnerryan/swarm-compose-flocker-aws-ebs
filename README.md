@@ -35,8 +35,8 @@ uft-flocker-volumes list
 ```
 
 **Also, go to the <server-ip>:8080 of your TODO list app and enter some items.**
-![alt text](http://imgur.com/GFEwSSl "add data")
-![alt text](http://imgur.com/KPK1bQQ "add more data")
+![alt text](http://i.imgur.com/GFEwSSl.png?1 "add data")
+![alt text](http://i.imgur.com/KPK1bQQ.png?1 "add more data")
 
 When your ready to schedule your move
 ```
