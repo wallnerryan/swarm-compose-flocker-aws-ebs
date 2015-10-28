@@ -1,0 +1,16 @@
+web:
+  image: wallnerryan/todolist
+  environment:
+    - DATABASE_IP=<Private IP Your Database Container will be scheduled to>
+    - DATABASE=mysql
+  ports:
+    - 8080:8080
+mysql:
+  image: wallnerryan/mysql
+  volume_driver: flocker
+  volumes:
+    - 'todolist:/var/lib/mysql'
+  environment:
+    - constraint:node==<Node Name Your Database Container will be scheduled to>
+  ports:
+    - 3306:3306

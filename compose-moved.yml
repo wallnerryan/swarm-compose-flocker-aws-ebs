@@ -1,0 +1,16 @@
+web:
+  image: wallnerryan/todolist
+  environment:
+    - DATABASE_IP=10.0.246.121
+    - DATABASE=mysql
+  ports:
+    - 8080:8080
+mysql:
+  image: wallnerryan/mysql
+  volume_driver: flocker
+  volumes:
+    - 'todolist:/var/lib/mysql'
+  environment:
+    - constraint:node==ip-10-0-246-121
+  ports:
+    - 3306:3306
