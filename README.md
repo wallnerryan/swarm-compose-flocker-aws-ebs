@@ -29,11 +29,14 @@ export DOCKER_HOST=tcp://<your_swarm_master_public_ip>:2357
 ```
 
 View your containers and volumes
-**Also, go to the <server-ip>:8080 of your TODO list app and enter some items.**
 ```
 docker ps
 uft-flocker-volumes list
 ```
+
+**Also, go to the <server-ip>:8080 of your TODO list app and enter some items.**
+![alt text](http://imgur.com/GFEwSSl "add data")
+![alt text](http://imgur.com/KPK1bQQ "add more data")
 
 When your ready to schedule your move
 ```
