@@ -1,7 +1,7 @@
 web:
   image: wallnerryan/todolist
   environment:
-    - DATABASE_IP=10.0.246.121
+    - DATABASE_IP=<New Private IP Your Database Container will be scheduled to> 
     - DATABASE=mysql
   ports:
     - 8080:8080
@@ -11,6 +11,6 @@ mysql:
   volumes:
     - 'todolist:/var/lib/mysql'
   environment:
-    - constraint:node==ip-10-0-246-121
+    - constraint:node==<New Node Name Your Database Container will be scheduled to>
   ports:
     - 3306:3306
