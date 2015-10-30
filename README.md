@@ -1,17 +1,16 @@
 
-Flocker Demo using Swarm and Compose on top of provisioned uft cluster on Amazon.
+# Flocker Demo using Swarm and Compose on top of provisioned cluster running Ubuntu on Amazon.
 
 ### Before you start with this Demo
 
-Reference this Gist to get started with your flocker cluster running with swarm.
+Reference this Gist to get started with your flocker cluster running with Docker Swarm.
 https://gist.github.com/wallnerryan/6f9fc4b3049aa7f1ae5b
 
-### Demo
+### For the Demo
 
-1. Create a Web App talking to MySQL
-2. Schedule a Move
-3. See that data moves with your container.
-
+1. Create a simple Python Web App talking to MySQL
+2. Schedule a Move for you container
+3. See that data moves with your container!
 
 This does not give overview of higher level schedulers like Marathon or Kubernetes but does make use of Docker Swarm as a minimal scheduler and Docker Compose for Orchestration.
 
